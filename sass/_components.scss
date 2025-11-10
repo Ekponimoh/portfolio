@@ -429,7 +429,7 @@
  //**********PROJECT****************
   .section-projects{
       background-image: linear-gradient(rgba(255,255,255, .9), rgba(255,255,255, 0.9)),
-      url(/image/service-bg-1.jpeg);
+      url('/image/service-bg-1.jpeg');
       background-size: cover;
       background-attachment: fixed;
       padding: 9rem 0;
@@ -746,7 +746,7 @@
 
  .about-hero {
   position: relative;
-  background: url('/image/about-bg.jpg') no-repeat center center/cover;
+  background: url('..image/about-bg.jpg') no-repeat center center/cover;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -929,7 +929,7 @@
 
 .section-skills{
   background-image: linear-gradient(rgba(255,255,255, 0.9), rgba(255,255,255, 0.9)),
-  url(/image/service-second-bg.jpg);
+  url('../image/service-second-bg.jpg');
   background-size: cover;
   background-attachment: fixed;
   transition: opacity 0.2s linear;
@@ -1053,7 +1053,7 @@
 
 .service-hero {
    background-image: linear-gradient(rgba(0,0,0, 0.9), rgba(0,0,0, 0.9)),
-  url(/image/skill-bg.jpg);
+  url('../image/skill-bg.jpg');
   background-size: cover;
   // background-attachment: fixed;
   display: flex;
@@ -1202,7 +1202,7 @@
   color: var(--text-light);
   background: 
     linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url('/image/project.bg.jpg') center/cover no-repeat;
+    url('../image/project.bg.jpg') center/cover no-repeat;
   overflow: hidden;
   transition: opacity 0.2s linear;
 
@@ -1214,7 +1214,7 @@
 
 .section-projects-project{
       background-image: linear-gradient(rgba(255,255,255, .9), rgba(255,255,255, 0.9)),
-      url(/image/project-bg-section.jpg);
+      url('/image/project-bg-section.jpg');
       background-size: cover;
       background-attachment: fixed;
       padding: 9rem 0;
@@ -1235,7 +1235,7 @@
   color: var(--text-light);
   background: 
     linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url('/image/contact hero.jpg') center/cover no-repeat;
+    url('../image/contact hero.jpg') center/cover no-repeat;
   overflow: hidden;
   
 
