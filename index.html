@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="I design and develop digital experiences that perform, impress, and endure. Let's build your brand's online presence.">
+    <meta name="keywords" content="web designer, web developer, UI UX, freelance designer, The Designer George, creative websites">
+    <meta name="author" content="Kenneth George">
+    <script src="js/script.js" defer></script>
+    <script src="js/type.js" defer></script>
+    <link rel="canonical" href="https://thedesignergeorge.com/">
+    <link rel="Icon" href="image/logo.jpg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" defer></script>
+    <title>The Designer George | Web Design & Development</title>
+</head>
+<body>
+<header class="header">
+  <div class="container header__container">
+    <a href="index.html" class="header__logo">The Designer George</a>
+      <div class="header__overlay"></div>
+    <nav class="header__nav  header-open">
+      <ul class="header__links">
+        <li><a href="index.html" class="header__link active">Home</a></li>
+         <li><a href="about.html" class="header__link">About</a></li>
+        <li><a href="service.html" class="header__link">Services</a></li>
+         <li><a href="project.html" class="header__link">Projects</a></li>
+          <li><a href="contact.html" class="header__link header__cta btn btn--primary footer__cta ">Contact</a></li>
+      </ul>
+    </nav>
+     <!-- <button class="btn btn--primary ">Let’s Talk</button> -->
+
+      <!-- Toggle Button -->
+         <button class="mobile-nav">
+          <ion-icon name="menu-outline" class="mobile-nav-icon"></ion-icon>
+          <ion-icon name="close-outline" class="mobile-nav-icon"></ion-icon>
+         </button>
+  </div>
+</header>
+
+<section class="hero" id="hero" aria-label="Hero Section">
+  <video autoplay muted loop playsinline class="hero__video">
+    <source src="image/hero-vid.mp4" type="video/mp4" />
+  </video>
+
+  <div class="hero__overlay"></div>
+  <div class="hero__content container">
+    <h1 class="heading-1 fade-text">I Design with Purpose. I Build for Visibility.</h1>
+    <p class="hero__tagline fade-text delay-1"> From SEO to user experience, I craft websites that make your brand stand out and stay ahead. Let’s turn your digital presence into your strongest marketing tool.</p>
+     <!--  -->
+    <div class="hero__buttons">
+         <a href="project.html" class="btn btn--primary fade-text delay-2">View My Work</a>
+         <a href="contact.html" class="btn btn--outline fade-text delay-2">Start Your Project</a>
+        </div>
+        <!--  -->
+  </div>
+</section>
+<!-- HERO SECTION ENDS -->
+
+<!-- ABOUT SECTION STARTS -->
+ <section class="section-about rise" id="about" aria-label="About The Designer George">
+    <h2 class="section__title heading-2 fade-blur">About Me</h2>
+      <!-- <p class="about__subtitle"><strong>The Designer George</strong> </p> -->
+       <div class="line rise stagger"></div>
+        <p class="about__tagline zoom-in">
+         I’m The Designer George a <span id="typewriter"></span>
+        passionate about crafting fast, engaging, and high-performing digital experiences. 
+        Every pixel and line of code I create is designed with one purpose: to make brands 
+        stand out and grow online.
+      </p>
+  <div class="container about">
+    <div class="about__image fade-left">
+      <img src="image/about-image.png" alt="The Designer George working on a web design project" loading="lazy" />
+    </div>
+
+    <div class="about__content">
+      <div class="about__values">
+        <div class="value rise">
+           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="about__icon">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z" />
+            </svg>
+          <h4>Performance-Driven</h4>
+          <p>Clean, efficient, and SEO-optimized websites built for speed and scalability.</p>
+        </div>
+        <div class="value rise">
+            <!-- Light Bulb (Heroicons-style, outline) -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="about__icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" role="img">
+          <path d="M9 18h6"></path>
+           <path d="M10 22h4"></path>
+           <path d="M12 2a6 6 0 0 0-4 10c0 1.5.6 2.9 1.6 3.9.6.6.9 1.3.9 2.1v.5h4v-.5c0-.8.3-1.5.9-2.1A5.99 5.99 0 0 0 16 12a6 6 0 0 0-4-10z"></path>
+            </svg>
+          <h4>Creative Strategy</h4>
+          <p>Balancing design and usability to communicate your brand’s voice beautifully.</p>
+        </div>
+        <div class="value rise">
+           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="about__icon">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 0 1-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 0 0 6.16-12.12A14.98 14.98 0 0 0 9.631 8.41m5.96 5.96a14.926 14.926 0 0 1-5.841 2.58m-.119-8.54a6 6 0 0 0-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 0 0-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 0 1-2.448-2.448 14.9 14.9 0 0 1 .06-.312m-2.24 2.39a4.493 4.493 0 0 0-1.757 4.306 4.493 4.493 0 0 0 4.306-1.758M16.5 9a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z" />
+            </svg>
+          <h4>Growth Focused</h4>
+          <p>Every decision  from typography to layout is made to convert visitors into clients.</p>
+        </div>
+          <div class="value rise">
+            <!-- Innovation Icon (Custom SVG) -->
+           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="about__icon">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 0 1-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 0 1 4.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0 1 12 15a9.065 9.065 0 0 0-6.23-.693L5 14.5m14.8.8 1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0 1 12 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5" />
+          </svg>
+          <h4>Innovation</h4>
+          <p>I blend creativity with functionality exploring fresh ideas, experimenting with new tools, and crafting unique designs that set brands apart.</p>
+        </div>
+      </div>
+
+      <a href="service.html" class="btn btn--primary rotate-in" style="display: grid; justify-self: center;">Explore My Services</a>
+    </div>
+  </div>
+</section>
+ <!-- ABOUT SECTION ENDS -->
+
+  <!-- STACK SECTION -->
+   <section class="section-stack " id="tech-stack" aria-label="Web Design Tools and Technologies">
+     <h2 class="section__title heading-2 fade-blur"> Tools i build with</h2>
+      <!-- <p class="about__subtitle"><strong> Technologies i use</strong> </p> -->
+       <div class="line rise stagger"></div>
+        <p class="about__tagline zoom-in stagger">
+        I use modern web design and developement stack to create scalable, and high-performance digital experiences for brands and creators.
+      </p>
+
+      <div class="container stack">
+          <div class="stack__grid">
+             <!-- Html -->
+            <div class="stack__item fade-left">
+              <img src="image/html.png" alt="HTML5 Logo" loading="lazy" />
+              <h3>HTML5</h3>
+              <p>The foundation of every website I build, providing clean, semantic structure for better SEO and accessibility.</p>
+            </div>
+             <!-- Css -->
+            <div class="stack__item fade-left">
+              <img src="image/css3.png" alt="CSS3 Logo" loading="lazy" />
+               <h3>CSS3</h3>
+               <p>Used to style and bring creative layouts to life with animations, responsiveness, and brand consistency.</p>
+            </div>
+             <!-- Sass-->
+             <div class="stack__item fade-left">
+              <img src="image/sass.png" alt="Sass Logo" loading="lazy" />
+               <h3>Sass (SCSS)</h3>
+               <p>Speeds up styling with variables, mixins, and clean modular code for maintainable designs.</p>
+            </div>
+             <!-- Javascript -->
+            <div class="stack__item fade-left">
+              <img src="image/javascript.png" alt="JavaScript Logo" loading="lazy" />
+               <h3>JavaScript (ES6+)</h3>
+               <p>Adds interactivity and dynamic functionality, creating seamless and engaging user experiences.</p>
+            </div>
+             <!-- Github-->
+            <div class="stack__item fade-left">
+              <img src="image/github.png" alt="GitHub Logo" loading="lazy" />
+               <h3>GitHub</h3>
+                <p>Version control and collaboration tool ensuring smooth deployment and project management.</p>
+            </div>
+              <!-- Figma -->
+            <div class="stack__item fade-left">
+              <img src="image/figma.png" alt="Figma Logo" loading="lazy" />
+                    <h3>Figma</h3>
+                   <p>My go-to tool for UI/UX design, wireframing, and prototyping to turn ideas into visuals.</p>
+              </div>
+               <!-- Wordpress -->
+               <div class="stack__item fade-left">
+              <img src="image/wordpress.png" alt="wordpress Logo" loading="lazy" />
+                 <h3>WordPress</h3>
+                 <p>Powers content-driven websites with flexibility, performance, and SEO-friendly architecture.</p>
+            </div>
+             <!-- Elementor-->
+             <div class="stack__item fade-left">
+              <img src="image/Elementor.png" alt="Elementor Logo" loading="lazy" />
+                <h3>Elementor</h3>
+                <p>Drag-and-drop builder for creating responsive, professional WordPress websites visually.</p>
+            </div>
+             <!-- Vs code -->
+            <div class="stack__item fade-left">
+              <img src="image/vscode.png" alt="vscode Logo" loading="lazy" />
+                    <h3>VS Code</h3>
+               <p>My main coding environment  optimized for productivity, extensions, and debugging.</p>
+            </div>
+              <!-- Netlify -->
+            <div class="stack__item fade-left" id="netlify">
+              <img src="image/netlify.png" alt="netlify Logo" loading="lazy" />
+                      <h3>Netlify</h3>
+                  <p>Handles fast, secure deployment and hosting with continuous integration and performance.</p>
+            </div>
+          </div>
+      </div> 
+     </section>
+    <!-- STACK SECTION ENDS -->
+
+    <!-- SERVICE SECTION -->
+     <section class="section-service rise" id="services" aria-label="Web Design and Development Services">
+         <h2 class="heading-2 fade-blur">What I Do</h2>
+         <div class="line rise stagger"></div>
+         <p class="about__tagline zoom-in stagger">Design and code crafted to elevate your brand and performance.</p>
+       <div class="service container">
+         <div class="service__grid">
+            <!-- Service 1 -->
+            <div class="service__item zoom-in">
+            <div class="service__btn">
+             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="service__icon">
+             <path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 0 1-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0 1 15 18.257V17.25m6-12V15a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 15V5.25m18 0A2.25 2.25 0 0 0 18.75 3H5.25A2.25 2.25 0 0 0 3 5.25m18 0V12a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 12V5.25" />
+             </svg>
+            </div>
+            <h3 class="service__heading"> Web Design & Development</h3>
+            <p class="service__description">I design and build responsive, high-performing websites that blend sleek visuals with fast, reliable code optimized for all devices and search engines.</p>
+         </div>
+         <!-- Service 2 -->
+          <div class="service__item zoom-in">
+            <div class="service__btn">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="service__icon">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15.042 21.672 13.684 16.6m0 0-2.51 2.225.569-9.47 5.227 7.917-3.286-.672ZM12 2.25V4.5m5.834.166-1.591 1.591M20.25 10.5H18M7.757 14.743l-1.59 1.59M6 10.5H3.75m4.007-4.243-1.59-1.59" />
+          </svg>
+            </div>
+            <h3 class="service__heading">UI/UX Design</h3>
+            <p class="service__description">I craft intuitive interfaces and seamless user experiences that keep visitors engaged and coming back. Every click, scroll, and interaction is intentional.</p>
+         </div>
+          <!-- Service 3 -->
+            <div class="service__item zoom-in">
+            <div class="service__btn">
+             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="service__icon">
+             <path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 0 0 4.486-6.336l-3.276 3.277a3.004 3.004 0 0 1-2.25-2.25l3.276-3.276a4.5 4.5 0 0 0-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437 1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008Z" />
+           </svg>
+            </div>
+            <h3 class="service__heading">Maintenance & Optimization</h3>
+            <p class="service__description">I ensure your site runs smoothly with ongoing support, performance tuning, and SEO updates keeping your brand fast, secure, and discoverable.</p>
+         </div>
+       </div>
+     </section>
+      <!-- SERVICE SECTION ENDS -->
+
+      <!-- FEATURED PROJECT SECTION -->
+      <section class="section-projects rise" id="projects" aria-label="Featured Web Design Projects">
+         <h2 class="heading-2 fade-blur">Featured Projects</h2>
+          <div class="line rise stagger"></div>
+         <p class="about__tagline zoom-in">A showcase of personal and concept projects — built to explore design systems, performance, and user-focused experiences.</p>    
+          <div class="project container">
+            <div class="project__grid">
+              <!-- Project 1 -->
+              <div class="project__item rise">
+                <img src="image/portfolio.png" alt="Project 1 Screenshot" class="project__image" loading="lazy" />
+                 <div class="project__overlay">
+                   <h3 class="project__title">My Portfolio (v1)</h3> 
+                   <p class="project__description">A personal portfolio showcasing creative works, structured with speed, accessibility, and SEO precision in mind.</p>
+                   <p class="project__tag">Front-End · Personal Brand · Motion Design</p>
+                   <a href="https://portfolio-tgd-1.netlify.app/" class="btn project__btn">view my work</a>
+                  </div>
+            </div>         
+             <!-- Project 2 -->
+              <div class="project__item rise">
+                <img src="image/solarbright.png" alt="Project 2 Screenshot" class="project__image" loading="lazy" />
+                 <div class="project__overlay">
+                   <h3 class="project__title">Solar Energy Landing Page</h3>
+                   <p class="project__description">A clean, responsive landing page built for a solar startup optimized for clarity, conversion, and modern energy solutions.</p>
+                   <p class="project__tag">Web Design · SEO · Conversion Strategy</p>
+                   <a href="https://solarlandingtdg.netlify.app/" class="btn project__btn">view my work</a>
+                  </div>
+            </div>
+               <!-- Project 3 -->
+              <div class="project__item rise" id="centeredProject">
+                <img src="image/annies copy.png" alt="Glow & Skin hair and tattoo booking website design by The Designer George" class="project__image" loading="lazy" />
+                 <div class="project__overlay">
+                   <h3 class="project__title">Beauty & Tattoo Booking Platform</h3>
+                   <p class="project__description">A sleek, dual-purpose website built for a creative stylist offering both hair and tattoo services.</p>
+                    <p class="project__tag">UI/UX · Booking System · Service Website</p>
+                   <a href="https://annies.netlify.app/" class="btn project__btn">view my work</a>
+                  </div>
+            </div>
+          </div>
+           <a href="project.html" class="btn project__btn btn--primary rotate-in" style="display: grid; justify-self: center;">view all my work</a>
+      </section>
+        <!-- FEATURED PROJECT SECTION ENDS -->
+
+        <!-- SECTION CTA -->
+         <section class="section-cta zoom-in" id="contact" aria-label="Call to Action Contact Section">
+           <div class="container cta">
+             <video autoplay muted loop playsinline class="cta__video">
+             <source src="image/cta-vid.mp4" type="video/mp4" />
+            </video>
+              <div class="cta__overlay"></div>
+             <h2 class="cta__title heading-2">Ready to Bring Your Next Idea to Life?</h2>
+             <div class="line" style="background-color: white;"></div>
+              <p class="cta__tagline" style="margin-bottom: 2.6rem;">You’ve seen what I do now let’s build something that truly represents your vision. Whether it’s a personal brand, product, or creative business, I’ll help you design and develop a digital experience that performs and endures.</p>
+               <a href="contact.html" class="btn btn--primary rotate-in ">Let’s Work Together</a>   
+           </div> 
+         </section>
+          <!-- SECTION CTA ENDS -->
+           
+          <!-- FOOTER -->
+  <footer class="footer fade-left">
+  <div class="footer__container container">
+    <!-- Brand / About -->
+    <div class="footer__brand">
+      <h3 class="footer__title">The Designer George</h3>
+      <p class="footer__description">
+        Web Designer & Front-End Developer — crafting fast, </br> user-centered digital experiences that help brands grow online.
+      </p>
+
+      <!-- CTA -->
+      <a href="contact.html" class="footer__cta">Start Your Project</a>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer__links">
+      <h4 class="footer__subtitle">Quick Links</h4>
+      <ul>
+        <li><a href="index.html" class="footer__link">Home</a></li>
+        <li><a href="about.html" class="footer__link">About</a></li>
+        <li><a href="service.html" class="footer__link">Service</a></li>
+        <li><a href="project.html" class="footer__link">Projects</a></li>
+        <li><a href="contact.html" class="footer__link">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Socials -->
+     <div class="footer__socials">
+      <h4 class="footer__subtitle">Socials</h4>
+    <div class="footer__icons">
+  <!-- Instagram -->
+  <a href="https://www.instagram.com/thedesignergeorge1?igsh=MTZiYzdjbHI2dGRhcg==" aria-label="Instagram" class="footer__icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+      <rect x="2.75" y="2.75" width="18.5" height="18.5" rx="5.5"></rect>
+      <path d="M16.5 7.5h.01"></path>
+      <path d="M12 8.75a3.25 3.25 0 1 0 0 6.5 3.25 3.25 0 0 0 0-6.5z"></path>
+    </svg>
+  </a>
+
+  <!-- Twitter -->
+  <a href="https://x.com/Designer9George?t=rv6NXIWPogN8WLgYVXlGHw&s=09" aria-label="Twitter" class="footer__icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+      <path d="M22 5.92c-.77.34-1.6.57-2.46.67a4.3 4.3 0 0 0 1.88-2.37 8.6 8.6 0 0 1-2.73 1.05A4.28 4.28 0 0 0 16 4a4.29 4.29 0 0 0-4.28 4.28c0 .34.04.68.11 1A12.16 12.16 0 0 1 3 5.14a4.29 4.29 0 0 0 1.32 5.72 4.28 4.28 0 0 1-1.94-.54v.06A4.3 4.3 0 0 0 4.3 14a4.24 4.24 0 0 1-1.12.15c-.27 0-.54-.03-.8-.08a4.29 4.29 0 0 0 4 2.97A8.6 8.6 0 0 1 2 19.54 12.1 12.1 0 0 0 8.29 21c7.54 0 11.67-6.25 11.67-11.67 0-.18 0-.35-.01-.53A8.28 8.28 0 0 0 22 5.92z"/>
+    </svg>
+  </a>
+
+  <!-- WhatsApp -->
+  <a href="https://wa.me/message/DMPLYY3TTEASB1" aria-label="WhatsApp" class="footer__icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+      <path d="M16.75 14.75c-.37-.19-2.19-1.08-2.52-1.21s-.59-.19-.84.19c-.25.37-.97 1.21-1.19 1.46-.22.25-.44.28-.81.09-.37-.19-1.54-.57-2.94-1.83-1.08-.96-1.81-2.14-2.02-2.51-.22-.37-.02-.57.16-.75.16-.16.37-.44.56-.66.19-.22.25-.37.37-.62.12-.25.06-.47-.03-.66-.09-.19-.84-2.02-1.16-2.77-.31-.75-.62-.65-.84-.65h-.72c-.25 0-.66.09-1.01.47-.34.37-1.33 1.3-1.33 3.18 0 1.88 1.37 3.7 1.57 3.95.19.25 2.7 4.1 6.54 5.74 3.84 1.63 3.84 1.09 4.53 1.03.69-.06 2.19-.9 2.51-1.76.31-.84.31-1.57.22-1.73-.09-.16-.34-.25-.72-.44z"/>
+    </svg>
+  </a>
+
+  <!-- LinkedIn -->
+  <a href="https://www.linkedin.com/in/kenneth-george-b19798262?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" aria-label="LinkedIn" class="footer__icon">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M16 8a6 6 0 0 1 6 6v6h-4v-6a2 2 0 0 0-4 0v6h-4v-6a6 6 0 0 1 6-6ZM2 9h4v12H2zM4 5a2 2 0 1 1 0 4 2 2 0 0 1 0-4Z" />
+    </svg>
+  </a>
+
+  <!-- TikTok -->
+  <a href="https://www.tiktok.com/@the.designer.george01?_r=1&_d=eh5lgba680d641&sec_uid=MS4wLjABAAAAC2H6PDwPHzyGMpaeqWITP9v77IhGUxFt92voqgLgl9rH6A71uk3o4fZECyZFlrvK&share_author_id=7553922115206153224&sharer_language=en&source=h5_m&u_code=emg12gl7kl421h&timestamp=1762540901&user_id=7553922115206153224&sec_user_id=MS4wLjABAAAAC2H6PDwPHzyGMpaeqWITP9v77IhGUxFt92voqgLgl9rH6A71uk3o4fZECyZFlrvK&item_author_type=1&utm_source=whatsapp_business&utm_campaign=client_share&utm_medium=android&share_iid=7568948920425039628&share_link_id=09dc1b9c-a336-4ca6-a1dd-f84a1b92df31&share_app_id=1233&ugbiz_name=ACCOUNT&ug_btm=b8727%2Cb4907&social_share_type=5&enable_checksum=1" aria-label="TikTok" class="footer__icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+      <!-- simplified TikTok glyph -->
+      <path d="M16 3.5v8.25a3.5 3.5 0 1 1-3.5-3.5V7.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M20 8.5a4 4 0 1 1-4-4" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </a>
+
+  <!-- GitHub -->
+  <a href="https://github.com/Ekponimoh" aria-label="GitHub" class="footer__icon">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round"
+        d="M12 2C6.48 2 2 6.48 2 12c0 4.4 2.87 8.13 6.84 9.46.5.09.66-.21.66-.46v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.15-1.13-1.46-1.13-1.46-.93-.64.07-.63.07-.63 1.03.07 1.58 1.05 1.58 1.05.91 1.57 2.39 1.12 2.97.86.09-.66.35-1.12.63-1.38-2.22-.26-4.55-1.11-4.55-4.92 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02A9.55 9.55 0 0 1 12 6.8a9.5 9.5 0 0 1 2.5.34c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.82-2.34 4.66-4.57 4.91.36.3.69.9.69 1.82v2.69c0 .25.16.55.66.46A9.996 9.996 0 0 0 22 12c0-5.52-4.48-10-10-10Z"/>
+    </svg>
+  </a>
+</div>
+ <!--  -->
+  </div>
+  </div>
+
+  <div class="footer__bottom">
+    <p>© <span id="year"></span> The Designer George — Web Designer & Front-End Developer. All rights reserved.</p>
+  </div>
+  <button id="scrollToTop" aria-label="scroll to top">&uArr;</button>
+</footer>
+</body>
+ <!-- Floating Background Particles -->
+<div class="floating-particles">
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+</html>
