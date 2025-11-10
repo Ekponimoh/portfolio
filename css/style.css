@@ -1015,7 +1015,7 @@ body {
 .section-stack {
   background-color: var(--highlight);
   padding: 9rem 0;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("/image/tech stack image.jpg");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("../image/tech stack image.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -1143,7 +1143,7 @@ body {
 }
 
 .section-projects {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(/image/service-bg-1.jpeg);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("../image/service-bg-1.jpeg");
   background-size: cover;
   background-attachment: fixed;
   padding: 9rem 0;
@@ -1378,7 +1378,7 @@ body {
 /******************************/
 .about-hero {
   position: relative;
-  background: url("/image/about-bg.jpg") no-repeat center center/cover;
+  background: url("../image/about-bg.jpg") no-repeat center center/cover;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1540,7 +1540,7 @@ body {
 /*********************************/
 /***********SKILLS****************/
 .section-skills {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(/image/service-second-bg.jpg);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("../image/service-second-bg.jpg");
   background-size: cover;
   background-attachment: fixed;
   transition: opacity 0.2s linear;
@@ -1640,7 +1640,7 @@ body {
    SERVICE HERO SECTION
 ================================*/
 .service-hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(/image/skill-bg.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("../image/skill-bg.jpg");
   background-size: cover;
   display: flex;
   align-items: center;
@@ -1760,7 +1760,7 @@ body {
   justify-content: center;
   text-align: center;
   color: var(--text-light);
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("/image/project.bg.jpg") center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../image/project.bg.jpg") center/cover no-repeat;
   overflow: hidden;
   transition: opacity 0.2s linear;
 }
@@ -1770,7 +1770,7 @@ body {
 }
 
 .section-projects-project {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(/image/project-bg-section.jpg);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("../image/project-bg-section.jpg");
   background-size: cover;
   background-attachment: fixed;
   padding: 9rem 0;
@@ -1787,7 +1787,7 @@ body {
   justify-content: center;
   text-align: center;
   color: var(--text-light);
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("/image/contact hero.jpg") center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../image/contact hero.jpg") center/cover no-repeat;
   overflow: hidden;
 }
 .contact-hero__content {
