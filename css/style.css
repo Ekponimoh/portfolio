@@ -1760,7 +1760,7 @@ body {
   justify-content: center;
   text-align: center;
   color: var(--text-light);
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../image/project.bg.jpg") center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../image/project-bg.jpg") center/cover no-repeat;
   overflow: hidden;
   transition: opacity 0.2s linear;
 }
