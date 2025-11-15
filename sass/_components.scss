@@ -1,47 +1,53 @@
-.hero {
+
+.home-hero {
   position: relative;
+  background: url('../image/about-bg.jpg') no-repeat center center/cover;
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
   color: white;
   overflow: hidden;
+  padding-bottom: 1rem 0;
 
-  &__video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -2;
-  }
-
-  &__overlay {
+  &::before {
+    content: "";
     position: absolute;
     inset: 0;
-    background: rgba(15, 15, 25, 0.9);
-    z-index: -1;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1;
   }
 
-  &__content {
-   margin-top: 25rem;
-   margin-bottom: 10rem;
+  
+
+  &__container {
+    position: relative;
+    z-index: 2;
+    margin-top: 12rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    justify-content: center;
+    column-gap: 5rem;
+
+     @media only screen and (max-width:62.25em){
+       margin-top: 10rem;   
+    }
+
+     @media only screen and (max-width:44.75em) {
+             grid-template-columns: 1fr;  
+          }
   }
 
-  &__tagline{
-      font-size: 1.8rem;
-      margin-bottom: 3rem;
-      color: #e0e0e0;
+  span{
+    background: linear-gradient(90deg, #176ed1, #1e2a38, #4a4a4a);
+     background-size: 200%;
+     background-clip: text;
+    -webkit-background-clip: text;
+     color: transparent;
+     -webkit-text-fill-color: transparent;
+      animation: moveGradient 4s linear infinite;
 
-      @media only screen and (max-width:68.75em){
-        padding-left: 5rem;
-        padding-right: 5rem;
-      }
-
-       @media only screen and (max-width:31.25em){
-        padding-left: 2rem;
-        padding-right: 2rem;
+      @media only screen and (max-width:63.625em) {
+            font-size: 3.8rem;
       }
   }
 
@@ -55,202 +61,77 @@
           align-items: center;
         }
   }
-}
 
-
-.btn {
-  &--primary {
-    background: var(--primary);
-    color: white;
-
-    &:hover {
-      background-color: white;
-      color: var(--text);
+  #heading-sub{
+    @media only screen and (max-width:63.625em){
+      font-size:3.8rem;
     }
   }
 
-  &--outline {
-    border: 2px solid white;
-    color: white;
+  &__image img {
+    width: 100%;
 
-    &:hover {
-      background: white;
-      color: var(--text);
+    @media only screen and (max-width:62.25em){
+       margin-top: 10rem;
+    }
+
+    @media only screen and (max-width:44.75em){
+       margin-top: 0;
     }
   }
-}
 
- //*********************************
- //*********************************
- //**********ABOUT******************
- .section-about{
-    background-color: var(--highlight);
-    padding: 9rem 0;
- }
 
- .about{
+  &__content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    column-gap: 3rem;
-    margin-top: 5.5rem;
-    align-items: center;
-
-    @media only screen and (max-width:62.1875em) {
-      grid-template-columns: 1fr;
-      row-gap: 4rem;
-    }
-   
-
-    &__subtitle{
-        text-align: center;
-        font-size: 3rem;
-        letter-spacing: 0.9px;
-        margin-bottom: .6rem;
-        text-transform: capitalize;
-        font-family: var(--font-body);
-    }
-
-    &__tagline{
-        font-size: 1.6rem;
-        margin-bottom: 2.5rem;
-        text-align: center;
-        color: var(--text-secondary);
-        font-family: var(--font-body);
-        padding-left: 10rem;
-        padding-right: 10rem;
-
-         @media only screen and (max-width:56.25em) {
-           padding-left: 7rem;
-           padding-right: 7rem;
-      }
-
-       @media only screen and (max-width:50em) {
-           padding-left: 4rem;
-           padding-right: 4rem;
-        }
-
-         @media only screen and (max-width:43.75em) {
-           padding-left: 1.5rem;
-           padding-right: 1.5rem;
-        }
-
-         @media only screen and (max-width: 31.25em) {
-           padding-left: 3.5rem;
-           padding-right: 3.5rem;
-         }
-    }
-
-     .about__image{
-      @media only screen and (max-width:62.1875em){
-         display: grid;
-        justify-items: center;
-        align-items: center;
-      }        
-    }
-
-    .about__image img{
-        width: 90%;
-        border-radius: 1rem;
-        box-shadow: 0 12px 15px rgba(15, 15, 25, 0.2);
-    }
-   
-
-    &__icon{
-        width: 3rem;
-        height: 3rem;
-        display: grid;
-        justify-self: center;
-        margin-bottom: .6rem;
-         transition: transform 0.3s ease, color 0.3s ease, filter 0.3s ease;
-        animation: float 3s ease-in-out infinite;
-
-     &:hover {
-    transform: scale(1.1) translateY(-4px);
-    color: var(--primary-color); 
-    filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.2));
-  }
-       
-    }
-
-    &__btn{
-        background-color: var(--primary);
-        transition: all 0.3s ease;
-        color: #fff;
-
-        &:hover {
-         box-shadow: 0 10px 12px rgba(15, 15, 25, 0.9);
-         background: white;
-         color: var(--text);
-      }
-    }
- }
-
-  .about__values {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 2.5rem;
-    margin-bottom: 3rem;
-    margin-top: 3.5rem;
-
-     @media only screen and (max-width:62.1875em) {
-      grid-template-columns: repeat(2,1fr);
-      row-gap: 4rem;
-    }
-
-     @media only screen and (max-width: 31.25em) {
-      grid-template-columns: 1fr;
-     }
-  
-
-    .value {
-      background-color: var(--shadow-4);
-      padding: 2rem 1rem;
-      border-radius: 1rem;
+    align-self: center;
+    
+      @media only screen and (max-width:44.75em) {
+           grid-row: 1 /2;
+           text-align: center;
+           margin-top: 15rem;
+          
+          }
+    p {
+      font-size: 1.6rem;
+      line-height: 1.7;
+      margin-bottom: 3rem;
       text-align: center;
-      transition: transform 0.3s ease;
-
-      &:hover {
-        transform: translateY(-5px);
-        background: linear-gradient(135deg, #4f46e5, #6d28d9);;
-        color: var(--secondary);
-        box-shadow: 0 15px 30px rgba(79, 70, 229, 0.9);
-      }
-
-    }
-    p, h4 {
-        text-align: center;
-         margin-bottom: .6rem;
-    }
-
-    .h4{
-      font-weight: var(--font-heading);
-    }
-
-    .p{
       font-family: var(--font-body);
+
+       @media only screen and (max-width:44.75em) {
+          padding-left: 10rem;
+          padding-right: 10rem;
+          }
+
+           @media only screen and (max-width:37.5em) {
+          padding-left: 5rem;
+          padding-right: 5rem;
+          }
+
+            @media only screen and (max-width:31.25em) {
+          padding-left: 3rem;
+          padding-right: 3rem;
+          line-height: 1.8;
+          }
     }
+
+    .about-hero__heading{
+      font-size: 1.6rem;
+      
+    }
+  }
 }
+ 
 
-#typewriter{
-      font-weight: var(--font-heading);
-      font-weight: 600;
-      text-transform: capitalize;
-      // color: var(--primary);
-    }
-//*********************************
- //*********************************
- //**********ABOUT ENDS*************
+ /* ===============================
+   STACK SECTION
+================================*/
 
-
-
- //*********************************
- //*********************************
- //**********STACK******************
  .section-stack{
     background-color: var(--highlight);
     padding: 9rem 0;
     background-image: linear-gradient(rgba(255,255,255, .9), rgba(255,255,255, .9)), 
-    url("../image/tech stack image.jpg");
+    url('../image/stack-bg.jpg');
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -261,12 +142,11 @@
   
   &__grid{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
 
   @media only screen and (max-width:56.25em) {
     grid-template-columns: repeat(2,1fr);
-    row-gap: 2rem;
-
+   
   }
 
    @media only screen and (max-width:37.5em) {
@@ -285,6 +165,14 @@
     justify-items: center;
     z-index: 1;
     transition: all 0.3s ease;
+
+    @media only screen and (max-width:50em) {
+      margin: 1.5rem;
+    }
+
+     @media only screen and (max-width:37.5em) {
+      margin: 1rem;
+    }
 
     &:hover{
       box-shadow: 0 15px 30px rgba(79, 70, 229, 0.9);
@@ -326,27 +214,16 @@
   }
  }
 
-//  #netlify{
-//     display: grid;
-//     justify-self: center;
-//     grid-column: 1/-1;
-//     width: 30%;
-
-//      @media only screen and (max-width:56.25em) {
-//          width: 50%;
-//          grid-row: 1/5;
-//       }
-//   }
 
 
+/*===============================
+  STACK SECTION ENDS
+================================*/
 
- //*********************************
- //*********************************
- //**********STACK ENDS*************
 
- //*********************************
- //*********************************
- //**********SERVICE****************
+ /*===============================
+   SERVICE SECTION
+================================*/
 
  .section-service{
    padding: 9rem 0;
@@ -420,13 +297,15 @@
    text-align: center;
  }
  }
- //*********************************
- //*********************************
- //**********SERVICE ENDS***********
+ /*===============================
+   SERVICE SECTION ENDS
+================================*/
 
- //*********************************
- //*********************************
- //**********PROJECT****************
+
+ /*===============================
+   PROJECT SECTION
+================================*/
+
   .section-projects{
       background-image: linear-gradient(rgba(255,255,255, .9), rgba(255,255,255, 0.9)),
       url("../image/service-bg-1.jpeg");
@@ -464,6 +343,7 @@
     position: relative;
     border-radius: 9px;
     overflow: hidden;
+    box-shadow: 0 12px 15px rgba(15, 15, 25, 0.9);
   }
 
   &__image {
@@ -473,6 +353,7 @@
     border-radius: inherit;
     box-shadow: 0 12px 15px rgba(15, 15, 25, 0.2);
     transition: transform 0.4s ease;
+     
   }
 
   &__item:hover .project__image {
@@ -520,26 +401,6 @@
     margin-bottom: 2.7rem;
   }
 
-  &__btn {
-    &:link,
-    &:visited,
-    &:active {
-      background-color: var(--primary);
-      color: var(--secondary);
-      display: inline-block;
-      // padding: clamp(0.9rem, 1.5vw, 1rem) clamp(1.6rem, 2vw, 2.5rem);
-      font-size: clamp(1.6rem, 1.3vw, 1.2rem);
-      transition: all 0.3s ease;
-      text-decoration: none;
-    }
-
-    &:hover {
-      box-shadow: 0 10px 12px rgba(15, 15, 25, 0.9);
-      transform: translateY(3px);
-      background: white;
-      color: var(--text);
-    }
-  }
 
   /* 🧩 Stop scaling below 400px */
   @media only screen and (max-width: 60.75em) { // 400px
@@ -681,13 +542,14 @@
 }
 }
 
- //*********************************
- //*********************************
- //**********PROJECT ENDS***********
+ /* ===============================
+   PROJECT SECTION ENDS
+================================*/
 
- //*********************************
- //*********************************
- //**********CTA********************
+ /* ===============================
+   CTA SECTION
+================================*/
+
  .section-cta{
     padding: 9rem 0;
     text-align: center;
@@ -732,21 +594,21 @@
   }
  }
 }
- //*********************************
- //*********************************
- //**********CTA ENDS***************
+ /* ===============================
+   CTA ENDS
+================================*/
 
 
- /*********************************/
- /********************************/
- /*******************************/
- /*******************************/
- /******************************/
- //ABOUT PAGE STYLES
+ /* ===============================
+   ================================
+   ==============================
+   About page styles
+================================*/
+
 
  .about-hero {
   position: relative;
-  background: url("..image/about-bg.jpg") no-repeat center center/cover;
+  background: url('../image/abt-bg.jpg') no-repeat center center/cover;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -758,9 +620,11 @@
     content: "";
     position: absolute;
     inset: 0;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.8);
     z-index: 1;
   }
+
+  
 
   &__container {
     position: relative;
@@ -778,6 +642,11 @@
 
      @media only screen and (max-width:44.75em) {
              grid-template-columns: 1fr;  
+          }
+
+          &-heading{
+           margin-top: 25rem;
+           margin-bottom: 15rem;
           }
   }
 
@@ -929,7 +798,7 @@
 
 .section-skills{
   background-image: linear-gradient(rgba(255,255,255, 0.9), rgba(255,255,255, 0.9)),
-  url("../image/service-second-bg.jpg");
+  url(/image/service-second-bg.jpg);
   background-size: cover;
   background-attachment: fixed;
   transition: opacity 0.2s linear;
@@ -1053,7 +922,7 @@
 
 .service-hero {
    background-image: linear-gradient(rgba(0,0,0, 0.9), rgba(0,0,0, 0.9)),
-  url("../image/skill-bg.jpg");
+  url("../image/service-bg.jpg");
   background-size: cover;
   // background-attachment: fixed;
   display: flex;
@@ -1071,17 +940,15 @@
     p {
       margin-bottom: 3rem;
     }
+
+    @media only screen and (max-width:43.75em) {
+          width: 100%;
+          margin-top: 15rem;
+          margin-bottom: 5rem;      
   }
 
-  .primary--button{
-    &:link,
-    &:active,
-    &:visited{
-        margin-bottom: 2rem;
-    }
-  }
 }
-
+}
 /* ===============================
    SERVICE SERVCE SECTION
 ================================*/
@@ -1092,11 +959,7 @@
   background-color: white;
   color: var(--text, #fff);
   text-align: center;
-
-  &__container {
-    max-width: 120rem;
-    margin: 0 auto;
-  }
+  
 
   &__header {
     margin-bottom: 6rem;
@@ -1199,10 +1062,10 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: var(--text-light);
-  background-image: 
-    linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url("../image/project-bg.jpg") center/cover no-repeat;
+  color: #fff;
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url('../image/projects-bg.jpg') center/cover no-repeat;
   overflow: hidden;
   transition: opacity 0.2s linear;
 
@@ -1214,14 +1077,14 @@
 
 .section-projects-project{
       background-image: linear-gradient(rgba(255,255,255, .9), rgba(255,255,255, 0.9)),
-      url("../image/project-bg-section.jpg");
+      url("../image/projects-section-image.jpg");
       background-size: cover;
       background-attachment: fixed;
       padding: 9rem 0;
   }
 
 
-  /* ===============================
+/* ===============================
    CONTACT HERO SECTION
 ================================*/
 
@@ -1232,34 +1095,40 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: var(--text-light);
-  background-image: 
-    linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url("../image/contact hero.jpg") center/cover no-repeat;
+  color: #fff;
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url('/image/contact hero.jpg') center/cover no-repeat;
   overflow: hidden;
-  
+   padding: 9rem 0;
 
   &__content {
-   margin-top: 25rem;
-   margin-bottom: 10rem;
+    margin-top: 15rem;
+    margin-bottom: 10rem;
   }
 }
 
-.contact-info {
-  padding: 9rem 0;
-  background: var(--secondary);
-
-  &__container {
+.contact-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    gap: 3rem;
-    text-align: center;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    grid-gap: 3rem;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
 
-    @media only screen and (max-width:37.5em){
-      grid-template-columns: 1fr;
-    }
+      @media only screen and (max-width:43.75em) {
+           grid-template-columns: 1fr;
+          padding: 0 3rem;  
+          margin-top: 5rem;
+           margin-bottom: 5rem;
+        }
 
-    
+        @media only screen and (max-width:25em) {
+          
+        
+
+        }
+   
 
   .contact-card {
     background: var(--shadow-4);
@@ -1269,36 +1138,152 @@
     transition: all 0.3s ease;
     overflow: hidden;
 
-    &:hover {
-      transform: translateY(-5px);
-       box-shadow: 0 15px 30px rgba(79, 70, 229, 0.9);
+     
+    p{
+      margin-bottom: 1rem;
+    }
+  
+
+      &.email {
+        text-align: center;
+      }
+
+      &.socials {
+        text-align: center;
+
+        .social-icons {
+          display: flex;
+          justify-content: center;
+          gap: 1.5rem;
+          flex-wrap: wrap;
+
+          .contact-icon {
+            display: inline-flex!important;
+            width: 3rem!important;
+            height: 3rem!important;
+             color: var(--primary)!important;
+             margin-bottom: 1.5rem!important;
+             animation: float 3s ease-in-out infinite!important;
+            transition: color 0.3s ease, transform 0.2s ease!important;
+
+            svg {
+              width: 100%;
+              height: 100%;
+            }
+
+            &:hover {
+              color: var(--accent)!important;
+              transform: translateY(-3px);
+            }
+          }
+        }
+      }
     }
 
-    .contact-icon {
-      width: 3rem;
-      height: 3rem;
-      color: var(--primary);
-      margin-bottom: 1.5rem;
+
+    .contact-right-grid{
+      display: flex;
+      flex-direction: column;
+      gap: 3.5rem;
     }
+
+    /* ===============================
+   CONTACT FORM SECTION
+    ================================*/
+.contact-label {
+  display: block;
+  margin-bottom: .8rem;
+  font-weight: 600;
+}
+
+.contact-input,
+.contact-textarea {
+  width: 100%;
+  padding: 1.2rem;
+  border: 1px solid var(--shadow-2);
+  border-radius: 6px;
+  font-size: 1.6rem;
+  font-family: var(--font-body);
+  margin-bottom: 2rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-input:focus,
+.contact-textarea:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 5px rgba(79, 70, 229, 0.5);
+}
+
+
+/* Wrapper div for each field */
+.contact-form div {
+  position: relative;
+  margin-bottom: 2.5rem;
+}
+
+/* Placing the label OVER the input ! Very important! esle it wont work */
+.contact-label {
+  position: absolute;
+  left: 1.2rem;
+  top: 1.4rem;
+  background: transparent;
+  pointer-events: none;
+  transition: 0.25s ease;
+  margin-bottom: 0; /* overrides the margin since label floats */
+}
+
+/* When focused OR filled → float the label */
+.contact-input:focus + .contact-label,
+.contact-textarea:focus + .contact-label,
+.contact-input:not(:placeholder-shown) + .contact-label,
+.contact-textarea:not(:placeholder-shown) + .contact-label {
+  top: -0.8rem;
+  left: 0.8rem;
+  font-size: 1.6rem;
+  border-radius: 6px;
+  color: var(--primary);
+  background: white;
+  padding: 0 .9rem;
+}
+
+
+.contact-input::placeholder,
+.contact-textarea::placeholder {
+  opacity: 0;
+}
+
+.contact-btn{
+  text-transform: capitalize;
+  border: none;
+  font-family: var(--font-body);
+   font-size: clamp(1.6rem, 1.3vw, 1.2rem);
+  padding: 1.4rem 3rem;
+  border-radius: 9px; 
+  font-weight: 600;
+   text-decoration: none;
+  transition: all .3s ease;
+   background-color: var(--primary);
+   color: var(--secondary);
+  display: inline-block;
+   box-shadow: 0 10px 12px rgba(0, 0, 0, 0.9);
+
+    @media only screen and (max-width:43.75em) {
+          display: grid;
+           justify-self: center;
+        }
+      
+     &:hover{
+    color: #1e2a38!important;
+    background-color: white!important;
+     transform: translateY(4px); 
+   
+     
   }
 }
 
-.contact__link{
-   &:link,
-      &:visited,
-      &:active{
-    color: var(--text);
-    font-weight: 600;
-    text-decoration: none;
-    transition: transform color 0.3s;
-    transition: all .3s ease-in-out; 
-    
-    &:hover{
-    transform: translateY(3px);
-     
-      }
-    }
 }
+
 
 .contact-cta {
   background: var(--primary);
@@ -1327,4 +1312,30 @@
   }
 
 }
+
+
+
+.cta__tagline{
+  width: 50%;
+  justify-self: center;
+
+     @media only screen and (max-width:56.25em) {
+           
+      }
+
+       @media only screen and (max-width:50em) {
+             width: 70%;
+        }
+
+         @media only screen and (max-width:43.75em) {
+            width: 80%;
+        }
+
+         @media only screen and (max-width: 31.25em) {
+            width: 90%;
+         }
 }
+
+
+
+ 
